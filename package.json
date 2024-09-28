@@ -1,0 +1,19 @@
+{
+  "name": "ytmix",
+  "productName" : "Rytmix",
+  "version": "1.0.0",
+  "description": "A music player web app",
+  "main": "main.js",
+  "scripts": {
+    "start" : "electron ."
+  },
+  "dependencies": {
+    "electron": "^latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^32.1.2"
+  }
+}
