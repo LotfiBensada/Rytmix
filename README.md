@@ -1,9 +1,9 @@
 # Rytmix
-A music player web app
+A music player web app <br>
 
-how to start the app:
-  -open the project folder on visual studio code
-  -run "npm install"
-  -run on the terminal the command "npx electonmon ."
-  -when the code is modified, the app will automatically restart
-  -to close, do ctrl + C
+how to start the app: <br>
+  -open the project folder on visual studio code <br>
+  -run "npm install" <br>
+  -run on the terminal the command "npx electonmon ." <br>
+  -when the code is modified, the app will automatically restart <br>
+  -to close, do ctrl + C <br>
