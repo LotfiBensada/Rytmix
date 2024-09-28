@@ -1,1 +1,9 @@
+# Application de bureau
 desktop/node_modules/
+
+# Serveur
+server/node_modules/
+server/.env
+
+# Site Web
+web/node_modules/
