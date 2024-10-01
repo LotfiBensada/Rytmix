@@ -1,6 +1,7 @@
 const express = require("express");
-const connectDB = require("./config/db"); // Fichier de connexion MongoDB
+const connectDB = require("../config/db");
 const dotenv = require("dotenv");
+const { createServer } = require('http');
 
 // Charger les variables d'environnement
 dotenv.config();
@@ -13,6 +14,7 @@ const app = express();
 // Middleware pour parser les requêtes JSON
 app.use(express.json());
 
+// Route principale
 app.get("/", (req, res) => {
   res.send(`
       <html>
@@ -27,9 +29,5 @@ app.get("/", (req, res) => {
     `);
 });
 
-// Démarrer le serveur
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-  console.log(`Link : http://localhost:${PORT}`)
-});
+// Exporter le serveur pour Vercel
+module.exports = app;
